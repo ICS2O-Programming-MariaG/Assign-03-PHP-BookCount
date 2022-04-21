@@ -22,13 +22,18 @@
     <?php
       echo "<p>Welcome to the second page of Book Count. This web page will calculate the approximate number of pages in a book given a known word count.</p>";
       echo "<p>Whether you're writing an article with a page limit or are hoping to craft a novel, you've come to the right place!</p>";
+      echo "<p>See below for the averages we use for our calculations, and click the image to learn more.</p>";
+    ?>
+    <!-- Adding a link to the image -->
+    <a href="https://www.bookdesignmadesimple.com/calculate-book-page-count-using-word-count/"><img src="./images/second-averages.png" alt="calculations for averages"></a>
+    <?php
       echo "<p>Please enter your text's information below:</p>";
       echo "<h3>Your Text's Information:</h3>";
     ?>
     <!-- Form for user input -->
     <form action="./calculate.php" method="post" target="results">
       <label for="words">Number of Words</label>
-      <input type="number" step="1" name="num-words" placeholder="Number of Words..."><br><br>
+      <input type="number" step="1" min="0" name="num-words" placeholder="Number of Words..."><br><br>
       <!-- Adding a multiple choice field - https://www.w3schools.com/html/html_form_elements.asp -->
       <label for="font-size">Font Size</label>
       <select id="font-size" name="font-size">

@@ -6,4 +6,9 @@
 
 iframe {
   border: none;
+  width: 50%;
+}
+
+img {
+  width: 25%;
 }

@@ -13,18 +13,18 @@
   if ($pageSize < 2) {
     //Font size if/then statement: if fontSize is 10
     if ($fontSize < 11) {
-      $pageCount = intval($wordCount / 400);
-      echo "The approximate number of pages is $pageCount.";
+      $pageCount = number_format($wordCount / 400, 2);
+      echo "The book has approximately $pageCount pages filled with text.";
     }
     //Second if/then statement: if fontSize is 12
     else if ($fontSize > 11) {
-      $pageCount = intval($wordCount / 300);
-      echo "The approximate number of pages is $pageCount.";
+      $pageCount = number_format($wordCount / 300, 2);
+      echo "The book has approximately $pageCount pages filled with text.";
     }
     //Third if/then statement: if fontSize is 11 (both other situations are false)
     else {
-      $pageCount = intval($wordCount / 350);
-      echo "The approximate number of pages is $pageCount.";
+      $pageCount = number_format($wordCount / 350, 2);
+      echo "The book has approximately $pageCount pages filled with text.";
     }
   }
 
@@ -32,18 +32,18 @@
   else if ($pageSize > 1) {
     //Font size 10
     if ($fontSize < 11) {
-      $pageCount = intval($wordCount / 600);
-      echo "The approximate number of pages is $pageCount.";
+      $pageCount = number_format($wordCount / 600, 2);
+      echo "The book has approximately $pageCount pages filled with text.";
     }
     //fontSize is 12
     else if ($fontSize > 11) {
-      $pageCount = intval($wordCount / 425);
-      echo "The approximate number of pages is $pageCount.";
+      $pageCount = number_format($wordCount / 425, 2);
+      echo "The book has approximately $pageCount pages filled with text.";
     }
     //fontSize is 11 (both other situations are false)
     else {
-      $pageCount = intval($wordCount / 500);
-      echo "The approximate number of pages is $pageCount.";
+      $pageCount = number_format($wordCount / 500, 2);
+      echo "The book has approximately $pageCount pages filled with text.";
     }
   }
 ?>
