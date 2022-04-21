@@ -3,3 +3,7 @@
 * This CSS file defines the style for index.php
 * ICS2O-Assign-03-PHP-BookCount
 */
+
+iframe {
+  border: none;
+}

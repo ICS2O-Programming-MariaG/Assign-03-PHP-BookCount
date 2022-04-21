@@ -29,12 +29,17 @@
     <form action="./calculate.php" method="post" target="results">
       <label for="words">Number of Words</label>
       <input type="number" step="1" name="num-words" placeholder="Number of Words..."><br><br>
-      <!-- Adding a multiple choice ("select") input field - learned from https://www.w3schools.com/html/html_form_elements.asp -->
+      <!-- Adding a multiple choice field - https://www.w3schools.com/html/html_form_elements.asp -->
       <label for="font-size">Font Size</label>
       <select id="font-size" name="font-size">
         <option value="10">10</option>
         <option value="11">11</option>
         <option value="12">12</option>
+      </select><br><br>
+      <label for="page-size">Page Size</label>
+      <select id="page-size" name="page-size">
+        <option value="1">5" x 8"</option>
+        <option value="2">6" x 9"</option>
       </select><br><br>
       <input type="submit" value="Calculate">
     </form>
