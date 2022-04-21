@@ -19,6 +19,27 @@
   </head>
   <body>
     <?php echo "<h1>Book Count</h1>"; ?>
-    <?php echo "<p>Welcome to the second page of Book Count. This web page will calculate the approximate number of pages in a book given a known word count.</p>"; ?>
+    <?php
+      echo "<p>Welcome to the second page of Book Count. This web page will calculate the approximate number of pages in a book given a known word count.</p>";
+      echo "<p>Whether you're writing an article with a page limit or are hoping to craft a novel, you've come to the right place!</p>";
+      echo "<p>Please enter your text's information below:</p>";
+      echo "<h3>Your Text's Information:</h3>";
+    ?>
+    <!-- Form for user input -->
+    <form action="./calculate.php" method="post" target="results">
+      <label for="words">Number of Words</label>
+      <input type="number" step="1" name="num-words" placeholder="Number of Words..."><br><br>
+      <!-- Adding a multiple choice ("select") input field - learned from https://www.w3schools.com/html/html_form_elements.asp -->
+      <label for="font-size">Font Size</label>
+      <select id="font-size" name="font-size">
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+      </select><br><br>
+      <input type="submit" value="Calculate">
+    </form>
+    <!-- Iframe for results -->
+    <iframe id="results" name="results">
+    </iframe>
   </body>
 </html>
