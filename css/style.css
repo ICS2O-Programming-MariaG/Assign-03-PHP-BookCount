@@ -4,8 +4,8 @@
 * ICS2O-Assign-03-PHP-BookCount
 */
 
-h3 {
-  padding: 80px 20px;
+#green {
+  padding: 40px 20px;
   color: white;
   background-color: #02a968;
   text-align: center;
@@ -17,7 +17,7 @@ body {
 }
 
 #blue {
-  padding: 40px 20px;
+  padding: 30px 20px;
   background-color: #d7f4f9;
   margin-left: 30px;
 }
@@ -53,6 +53,7 @@ h5 {
   padding: 20px;
   background-color: #fee9fb;
   margin-left: 30px;
+  margin-top: 30px;
 }
 
 iframe {
@@ -73,4 +74,8 @@ iframe {
 
 #margin {
   margin-left: 5%;
+}
+
+#small-margin {
+  margin-top: -15px;
 }

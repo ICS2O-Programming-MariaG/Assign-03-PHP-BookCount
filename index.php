@@ -26,7 +26,7 @@
     <!--Table for style -->
     <table>
       <tr>
-        <td class="data-one"><?php echo "<h3>Book Count</h3>"; ?></td>
+        <td id="green" class="data-one"><?php echo "<h3>Book Count</h3><p id='small-margin'>Page Two</p>"; ?></td>
         <td class="data-two">
           <!-- Div for style -->
           <div id="blue">
