@@ -4,11 +4,73 @@
 * ICS2O-Assign-03-PHP-BookCount
 */
 
-iframe {
-  border: none;
-  width: 50%;
+h3 {
+  padding: 80px 20px;
+  color: white;
+  background-color: #02a968;
+  text-align: center;
+}
+
+body {
+  width: 80%;
+  margin: 5% 10%;
+}
+
+#blue {
+  padding: 40px 20px;
+  background-color: #d7f4f9;
+  margin-left: 30px;
+}
+
+.data-one {
+  width: 20%;
+}
+
+.data-two {
+  width: 70%;
+}
+
+p {
+  width: 90%;
+  margin-left: 5%;
 }
 
 img {
-  width: 25%;
+  width: 100%;
+}
+
+form {
+  width: 90%;
+  margin-left: 5%;
+}
+
+h5 {
+  width: 90%;
+  margin-left: 5%;
+}
+
+#pink {
+  padding: 20px;
+  background-color: #fee9fb;
+  margin-left: 30px;
+}
+
+iframe {
+  border: none;
+  background-color: #fdfebb;
+  padding: 20px;
+  width: 90%;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+#orange {
+  padding: 20px;
+  background-color: #ffe7af;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+#margin {
+  margin-left: 5%;
 }
