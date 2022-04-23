@@ -49,8 +49,11 @@
             <?php echo "<h5>Your Text's Information:</h5>"; ?>
             <!-- Form for user input -->
             <form action="./calculate.php" method="post" target="results">
-              <label for="words">Number of Words</label>
-              <input type="number" step="1" min="0" name="num-words" placeholder="Number of Words..."><br><br>
+              <!-- MDL numeric text field -->
+              <div class="mdl-textfield mdl-js-textfield">
+                <input name="num-words" class="mdl-textfield__input" type="number" step="1" min="0" id="sample2" placeholder="Number of Words...">
+                <span class="mdl-textfield__error">Input type is not accepted!</span>
+              </div><br>
               <!-- Adding a multiple choice field - https://www.w3schools.com/html/html_form_elements.asp -->
               <label for="font-size">Font Size</label>
               <select id="font-size" name="font-size">
@@ -63,7 +66,7 @@
                 <option value="1">5" x 8"</option>
                 <option value="2">6" x 9"</option>
               </select><br><br>
-              <input type="submit" value="Calculate">
+              <input id="pink-button" type="submit" value="Calculate">
             </form>
           </div>
         </td>
